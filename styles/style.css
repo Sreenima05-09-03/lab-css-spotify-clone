@@ -13,9 +13,9 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+img {
+    max-width: 100%;
+    height: auto;
 }
 .navbar {
     position: fixed;
@@ -46,10 +46,11 @@ a {
 
 .nav-links a {
     color: white;
+    text-decoration: none;
     font-size: 18px;
 }
 .hero {
-    background-image: url('../images/hero-bg.jpg'); 
+    background-image: url('../images/landing.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -58,7 +59,6 @@ a {
     align-items: center;
     text-align: center;
     color: white;
-    padding: 0 20px;
 }
 
 .hero-content {
@@ -73,12 +73,10 @@ a {
 .hero p {
     font-size: 24px;
 }
-
-/* Spotify Content Section */
 .spotify-content {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 60px 20px;
 }
 
 .content-box {
@@ -90,7 +88,19 @@ a {
     border-radius: 8px;
 }
 
-/* Green Section */
+.content-box img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.content-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-size: 16px;
+}
 .green-section {
     background-color: #1DB954;
     color: white;
@@ -98,31 +108,20 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .text-content {
     flex: 1;
-    min-width: 300px;
-    padding: 20px;
 }
 
 .image-content {
     flex: 1;
-    min-width: 300px;
     text-align: right;
-    padding: 20px;
-}
-
-.image-content img {
-    max-width: 100%;
-    height: auto;
 }
 
 .spotify-logo {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 50px; /* Adjust size as needed */
-    height: auto;
+    width: 50px;
 }
